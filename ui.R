@@ -5,12 +5,13 @@ library(plotly)
 dashboardPage(
     dashboardHeader(title = "covid-19"),
     dashboardSidebar(h4("country stats"),
-                     p("Data is updated daily from European Centre for 
-                       Disease Prevention and Control website (ecdc.europa.eu)."),
+                     p(HTML(paste0("Data is updated daily from European Centre for 
+                       Disease Prevention and Control website (ecdc.europa.eu). 
+                       You can find the code at ", a(href="https://github.com/hhekim/Covid19-Country-Stats", "Github")))),
         selectInput(
             inputId = "baseCntry", 
                     label = "Choose a country:",
-                    choices = sort(setNames(countries$countriesAndTerritories, countries$geoId)))
+                    choices = sort(setNames(countries$geoId,countries$countriesAndTerritories)))
     ),
     dashboardBody(fluidRow(
         valueBoxOutput("casesbox", width = 3),
