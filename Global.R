@@ -17,7 +17,7 @@ covid<- covid %>%
 
 countries <- covid %>% 
   group_by(geoId,countriesAndTerritories) %>%
-  summarise(totalcases=sum(cases),totaldeaths=sum(deaths),pop=mean(popData2018)) %>% 
+  summarise(totalcases=sum(cases),totaldeaths=sum(deaths),pop=mean(popData2019)) %>% 
   filter(totalcases > 1000 & totaldeaths > 0)
 
 covid_top_15 <- covid %>% 
