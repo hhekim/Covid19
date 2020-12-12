@@ -1,8 +1,10 @@
-This is a simple Shiny app visualizing Covid19 case, death and recovery numbers on a World choropleth map. It uses Johns Hopkins University [dataset](https://github.com/CSSEGISandData/COVID-19).
+# COVID19 Tracker
 
-Type of the statistics and time period can be chosen on the control panel.
+This is a simple Shiny app visualizing Covid19 case, death and recovery numbers on an interactive World choropleth map. It uses Johns Hopkins University [dataset](https://github.com/CSSEGISandData/COVID-19).
 
-Tapping/Clicking on a country triggers a plot of that country below the input lists.
+Type of the statistics and time period can be chosen via the control panel.
+
+Tapping/Clicking on a country triggers an interactive [Leaflet](https://rstudio.github.io/leaflet/) plot of chosen stats below the input lists.
 
 The app can be viewed at [here](https://hhekim.shinyapps.io/Covid19/).
 
