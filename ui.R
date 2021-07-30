@@ -51,7 +51,7 @@ navbarPage("CoronaVirus", id="nav",
                         ),
                         fluidRow(
                             h3("Code"),
-                            tags$li("Source code van be viewed",
+                            tags$li("Source code can be viewed",
                                    tags$a(tags$i("here"),
                                           href = "https://github.com/hhekim/Covid19",
                                           target = "_blank"), 

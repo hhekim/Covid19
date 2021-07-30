@@ -26,7 +26,7 @@ recovered_ts_url <- getURL("https://raw.githubusercontent.com/CSSEGISandData/COV
 recovered_ts <- read.csv(text = recovered_ts_url)
 
 jh <- jh %>% 
-  filter(Active >= 0) %>% 
+#  filter(Active >= 0) %>% 
   group_by(Country_Region) %>% 
   summarise(Lat = first(Lat), Long_ = first(Long_),
             Confirmed = sum(Confirmed), Deaths = sum(Deaths), 
